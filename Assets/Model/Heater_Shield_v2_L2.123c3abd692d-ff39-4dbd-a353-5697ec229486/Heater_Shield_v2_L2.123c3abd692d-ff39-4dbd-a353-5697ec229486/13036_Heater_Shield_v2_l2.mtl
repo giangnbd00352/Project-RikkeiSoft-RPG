@@ -1,0 +1,56 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 18.01.2012 12:52:11
+
+newmtl Heater_Shield_decor_2
+	Ns 40.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.4745 0.3176 0.2118
+	Kd 0.4745 0.3176 0.2118
+	Ks 0.3600 0.3600 0.3600
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Map__8_Falloff.jpg
+	map_Kd Map__8_Falloff.jpg
+
+newmtl Heater_Shield_decor
+	Ns 55.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.7137 0.5412 0.2706
+	Kd 0.7137 0.5412 0.2706
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Heater_Shield_body
+	Ns 60.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.6300 0.6300 0.6300
+	Ke 0.0000 0.0000 0.0000
+	map_Ka Heater_Shield_body.jpg
+	map_Kd Heater_Shield_body.jpg
+	map_bump Heater_Shield_body_bump.jpg
+	bump Heater_Shield_body_bump.jpg
+
+newmtl Heater_Shield_rivets
+	Ns 55.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.6235 0.6235 0.6235
+	Kd 0.6235 0.6235 0.6235
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
