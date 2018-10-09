@@ -25,7 +25,9 @@ public class Inventory : MonoBehaviour {
 		{
 			for(int i = 0; i < items.Count; i++)
 			{
-				content.transform.GetChild(i).GetComponent<Image>().sprite = items[i].icon;
+				content.transform.GetChild(i).GetChild(0).GetComponent<Image>().sprite = items[i].icon;
+				content.transform.GetChild(i).GetChild(0).transform.gameObject.SetActive(true);
+				content.transform.GetChild(i).GetChild(1).transform.gameObject.SetActive(true);
 			}	
 		}
 	}
@@ -44,9 +46,7 @@ public class Inventory : MonoBehaviour {
 		} 	else 		
 			items.Add(item);		
 	}
-
-	[SerializeField]
-	protected internal void Remove (Item item)
+	public void Remove (Item item)
 	{
 		items.Remove(item);
 	}
@@ -58,9 +58,13 @@ public class Inventory : MonoBehaviour {
 		{
 			for(int i = 0; i < items.Count; i++)
 			{
-				content.transform.GetChild(i).GetComponent<Image>().sprite = items[i].icon;
+				content.transform.GetChild(i).GetChild(0).GetComponent<Image>().sprite = items[i].icon;
+				content.transform.GetChild(i).GetChild(0).transform.gameObject.SetActive(true);
+				content.transform.GetChild(i).GetChild(1).transform.gameObject.SetActive(true);
 			}	
 		}
+
+
 	}
 
 	public void exitInventory()

@@ -14,8 +14,12 @@ public class PlayerMovement : MonoBehaviour {
 	private Rigidbody rb;
 	[SerializeField]
 	private Animator anim;
+	[SerializeField]
+	private BoxCollider _swordCollier;
 
 	private GameObject quest;
+
+	public bool couch;
 
 	void Start()
 	{
@@ -28,6 +32,7 @@ public class PlayerMovement : MonoBehaviour {
 		PlayerRotate();
 		MoveByKey();
 		shortCut();
+
 	}
 
 	void Movement() 
@@ -79,11 +84,15 @@ public class PlayerMovement : MonoBehaviour {
 			anim.SetBool("isJump", false);	
 
 		//Attack
-		if (Input.GetKey(KeyCode.F))
+		if (Input.GetKeyDown(KeyCode.F))
 		{
+			_swordCollier.enabled = true;
 			anim.SetBool("isAttack", true);
 		} else
+		{
 			anim.SetBool("isAttack", false);
+		}
+			
 
 		//Kick
 		if (Input.GetKey(KeyCode.C))
